@@ -12,7 +12,6 @@ public class CustomUserDetails extends org.springframework.security.core.userdet
         super(user.getUsername(),
                 user.getPassword(),
                 authorities);
-
         this.user = user;
     }
 

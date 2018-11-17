@@ -8,12 +8,18 @@ Classes
      phoneNumber
 
  2. Order class
-    pizaname
-    topic
+    pizzaName
     date 
     basePrice
     tax
 
- 3. Tipic Class
+ 3. Toping Class
     topingItem
     topingPrice
+    
+    
+    extra
+     public CloudinaryConfig(@Value("${cloud.key}")  String key,
+                                @Value("${cloud.secret}") String secret,
+                                @Value("${cloud.name}") String cloud){
+            cloudinary = Singleton.getCloudinary();

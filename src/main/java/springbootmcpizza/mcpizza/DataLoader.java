@@ -17,7 +17,7 @@ public class DataLoader implements CommandLineRunner {
     RoleRepository roleRepository;
 
     @Autowired
-    MessageRepository messageRepository;
+    OrderRepository orderRepository;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -30,15 +30,13 @@ public class DataLoader implements CommandLineRunner {
         Role adminRole = roleRepository.findByRole("ADMIN");
         Role userRole = roleRepository.findByRole("USER");
 
-        User user = new User("jim@jim.com", passwordEncoder.encode("password"), "Jim", "Jimmerson", true,
+        User user = new User("jim@jim.com", passwordEncoder.encode("password"), "Jim", "2024560981", true,
                 "jim");
         user.setRoles(Arrays.asList(userRole));
         userRepository.save(user);
 
         user = new User("admin@admin.com", passwordEncoder.encode("password"),
-                "Admin",
-                "User", true,
-                "admin");
+                "Admin",        "30234521345", true,       "admin");
         user.setRoles(Arrays.asList(adminRole));
         userRepository.save(user);
 
