@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:replace="base :: nav"></div>
+<div>
+    <p > How do you want to ordred</p>
+</div>
+<form>
+
+
+    Piza Type:<br>
+    <input type="text" name="pizaName"><br>
+    Last name:<br>
+    <input type="text" name="lastname">
+
+</form>
+
+<div th:replace="base:: footer"></div>
+</body>
+</html>
