@@ -1,12 +1,21 @@
-piza Order
+Online Pizza Order Application Project
 
-Classes
-
- 1. Custemer ( be able toselect topings)
-     name
-     email
+ Project Requeriments
+ The following requerements should 
+ 
+  Customer or users can either buy with out sigb up or can register to collect points 
+  Customer can buy from the monu or can build their own preference by adding toppings
+  (topings will be added or dispalayed to the pizza when choosen fromt he list)
+  
+  
+  1. Custemer ( User )
+    Properties
+     firstName
+     LatsName
      phoneNumber
-
+     email
+     
+     
  2. Order class
     pizzaName
     date 
@@ -18,8 +27,4 @@ Classes
     topingPrice
     
     
-    extra
-     public CloudinaryConfig(@Value("${cloud.key}")  String key,
-                                @Value("${cloud.secret}") String secret,
-                                @Value("${cloud.name}") String cloud){
-            cloudinary = Singleton.getCloudinary();
+    

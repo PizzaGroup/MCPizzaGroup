@@ -12,10 +12,13 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String pizzaName;
+    private String pizzaSize;
     private Date date;
     private double basePrice;
     private double tax;
 
+    public Order() {
+    }
 
     public long getId() {
         return id;
@@ -56,4 +59,5 @@ public class Order {
     public void setTax(double tax) {
         this.tax = tax;
     }
+
 }
