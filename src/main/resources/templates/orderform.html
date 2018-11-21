@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
+
+
 <div th:replace="base :: nav"></div>
-
 <form autocomplete="off" th:action="@{/order}" method="post">
-    Pizza Type:<br>
-    <input type="text" name="pizzaName" > <br>
 
-    Size :
-    <li>
-        <select name="pizzaSize">
-            <option selected="" >(Please select size)</option>
-            <option value="AF">Large</option>
-            <option value="AL">Medium</option>
-            <option value="DZ">Small</option>
-        </select>
-    </li>
+    <pre>
+        <fieldset>
 
-    Date :<br>
-    <input type="date" name="date" >
-    <br><br>
+            <legend>Personal information:</legend>
+            First name:
+            <input type="text" name="firstName">
+            Last name:<br>
+            <input type="text" name="lastName">
+            Phone Number:<br>
+            <input type="number" name="number">
+            Email Address:
+            <input type="email" name="email">
+            User Name Address:
+            <input type="username" name="password">
+            Password:
+            <input type="password" name="password">
+            <div class="form-group row">
 
-    Price :<br>
-    <input type="text" name="basePrice" >
-    <br><br>
+                <div class="col-sm-2">
+                    <button type="submit" class="btn btn-color text-blue">Register</button>
+                </div>
+            </div>
 
-    Tax :<br>
-    <input type="text" name="tax" >
-    <br><br>
-
-
-    <input type="submit" value="Submit">
+        </fieldset>
+</pre>
 </form>
 
-
-<div th:replace="base:: footer"></div>
 </body>
+<div th:replace="base:: footer"></div>
 </html>

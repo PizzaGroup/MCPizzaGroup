@@ -25,18 +25,18 @@ public class HomeController {
         return "index";
     }
 
-        @RequestMapping("/register")
+    @RequestMapping("/register")
     public String registerCustomer(Model model){
         model.addAttribute("user", new User());
         return "registerform";
     }
 
+
     @RequestMapping("/order")
-    public String addOrder(Model model, BindingResult result){
-       model.addAttribute("order", new Order());
+    public String addOrder(Model model){
+        model.addAttribute("order", new Order());
         return "orderform";
     }
-
 
     @PostMapping("/order")
     public String processOrder(@Valid @ModelAttribute("order") Order order, BindingResult result){
@@ -46,8 +46,5 @@ public class HomeController {
        orderRepository.save(order);
         return "redirect:/";
     }
-
-
-
-
+    
 }
