@@ -1,8 +1,8 @@
 ### Online Pizza Order Application Project
 
- ## Requeriments
+ #### Requeriments
  
-# customers should be able to select from the following components
+ ##### customers should be able to select from the following components
    * A dough type
    * Sauce
    * Cheese
