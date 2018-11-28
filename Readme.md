@@ -1,7 +1,15 @@
-## Online Pizza Order Application Project
+### Online Pizza Order Application Project
 
- Project Requeriments
- The following requerements should 
+ ## Requeriments
+ 
+# customers should be able to select from the following components
+   * A dough type
+   * Sauce
+   * Cheese
+   * Veggies
+   * Protein
+   * Toppings/Finishing touches
+* customers can either build their own 
  
   Customer or users can either buy with out sigb up or can register to collect points 
   Customer can buy from the monu or can build their own preference by adding toppings
