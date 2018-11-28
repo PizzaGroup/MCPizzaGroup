@@ -2,19 +2,32 @@
 
  #### Requeriments
  
- ##### customers should be able to select from the following components
+ ##### Customers should be able to select from the following components
    * A dough type
    * Sauce
    * Cheese
    * Veggies
    * Protein
    * Toppings/Finishing touches
-* customers can either build their own 
+   ##### Users or Customets can either built their own pizza from blank pizza image or can order ready made pizza online
+   for each topping the user selects, those toppings should show up on that pizza image.
+   
+   Each pizza should start off with a base price (one dough type, one sauce, one cheese and two toppings). Additional toppings should be    calculated and added to the base price.
+
+   Upon submission, generate an itemized receipt with the user's selections, cost of each additional topping and date/time of the order    should also be captured.
+   
+  Users can either log into their account to place and order or create an account upon checking out. Users should be able to see a list   of their order history when logged into their accounts.
+   
+   Users should be notified by text message once their order has been submitted(we used twilio for the text message and 
+   text can be sent only for the user who create twilio account and used his own twilio number)
  
-  Customer or users can either buy with out sigb up or can register to collect points 
-  Customer can buy from the monu or can build their own preference by adding toppings
-  (topings will be added or dispalayed to the pizza when choosen from  the list)
-  customers should get text message 
+   Reports to generate by the admin:
+
+   A list of all customers
+   Top 3 pizza toppings
+   Total sales
+    Find a customer by name
+  
   
   
   1. Custemer ( User )
