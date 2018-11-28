@@ -26,8 +26,9 @@
    A list of all customers
    Top 3 pizza toppings
    Total sales
-    Find a customer by name
-  
+   Find a customer by name
+
+  Admins should also have the ability to add/remove pizza toppings from the ordering system.
   
   
   1. Custemer ( User )
